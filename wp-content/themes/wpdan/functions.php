@@ -43,7 +43,14 @@ add_action('wp_enqueue_scripts','wpdan_enqueue_styles');
  function wpdan_widgets_init(){
 
  	register_sidebar([
- 		'name' =>esc_html('Main Sidebar'),
- 		'id'=>'main-sidebar' 
+	 'name' =>esc_html('Main Sidebar'),
+	 'id'=>'main-sidebar',
+        'description' => esc_html__('Add Widgets for main sidebar here', 'wpdan_widgets_init'),
+        'before_widget'=>'<section class="widget">',
+        'after_widget' =>'</section>',
+        "before_title"=>"<h2 class='widget-title'>",
+        "after_title" => '</h2>' 
  	]);
  }
+
+ add_action('widgets_init','wpdan_widgets_init');
