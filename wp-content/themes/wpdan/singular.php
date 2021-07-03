@@ -13,7 +13,9 @@
 	
 	<?php endif;?>
 
-	<p>index.php</p>
+	<p>Singular.php</p>
+
+	
  </main>
  <?php get_sidebar();?>
 
