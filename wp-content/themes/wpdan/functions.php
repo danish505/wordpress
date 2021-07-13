@@ -5,7 +5,7 @@ add_theme_support('title_tag');
 
 add_theme_support('post-thumbnails');
 
-add_theme_support('post_format',[
+add_theme_support('post-formats',[
 	'aside','image','gallery','link','image','qoute','status',
 	'video','audio','chat'
 ]);
